@@ -1,0 +1,47 @@
+.my-tooltip {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    background-color: grey;
+}
+
+.tooltip-container {
+    position: relative;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon:hover + .my-tooltip {
+    display: inline-block;
+}
+
+.my-tooltip:hover {
+    display: inline-block;
+}
+
+.my-popup {
+    width: 200px;
+    border-radius: 10px;
+    padding: 20px 0;
+    display: none;
+}
+
+a:link {
+    text-decoration: none;
+    border-bottom: 1.5px outset grey;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.show-popup {
+    display: block;
+}
+
+/* .my-menu:v + .my-popup {
+ display: block;
+} */

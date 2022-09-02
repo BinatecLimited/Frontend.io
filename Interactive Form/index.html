@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+    <script src="./index.js" defer></script>
+    <title>Interactive Form</title>
+</head>
+<body>
+    <main>
+        <div class="first_section">
+            <div class="card_front">
+                <div class="cardTop">
+                    <div class="fillCircle"></div><div class="borderCircle"></div>
+                </div>
+                <div class="cardNumber">
+                    <!-- <p><span>0</span><span>0</span><span>0</span><span>0</span><span> </span><span>0</span><span>0</span><span>0</span><span>0</span><span> </span><span>0</span><span>0</span><span>0</span><span>0</span><span> </span><span>0</span><span>0</span><span>0</span><span>0</span></p> -->
+                    <p id="cardNum">0000<span> </span>0000<span> </span>0000<span> </span>0000</p>
+                </div>
+                <div class="cardInfo">
+                    <h5 id="cardholdername">JANE APPLESEED</h5>
+                    <h5 class="dat">
+                        <span id="mm">00</span>/<span id="yy">00</span>
+                    </h5>
+                </div>
+                <!-- <img src="./images/bg-card-front.png" alt="card_front"> -->
+            </div>
+            <div class="card_back">
+                <h5 class="code" id="cvc">000</h5>
+            </div>
+        </div>
+        <div class="second_section">
+            <form action="">
+                <fieldset>
+                    <label for="name"> CARDHOLDER NAME
+                        <input id="cardName" type="text" name="name" placeholder="e.g. Jane Appleseed"/>
+                    </label>
+                    <label for="number"> CARD NUMBER
+                        <input id="cardNumberInput" maxlength="16" name="number" placeholder="e.g. 1234 5678 9123 0000"/>
+                    </label>
+                </fieldset>
+                <fieldset class="row-layout">
+                    <label for="date">EXP. DATE (MM/YY)
+                        <input type="text" name="date" maxlength="2" class="date" id="month" placeholder="MM">
+                        <input type="text" name="date" maxlength="2" class="date" id="year" placeholder="YY">
+                    </label>
+                    <label for="">CVC
+                        <input type="text" name="cvc" class="cvc" id="cvcInput" maxlength="3" placeholder="e.g. 123">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <input type="submit" value="Confirm" class="btn" id="btn">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
